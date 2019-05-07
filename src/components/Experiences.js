@@ -45,7 +45,7 @@ const Experiences = ({ props }) => (
           </div>{/*<!--//details-->*/}
       </div>{/*<!--//item-->*/}
 
-  </section>
+  </section>  
 );
 
 export default Experiences;

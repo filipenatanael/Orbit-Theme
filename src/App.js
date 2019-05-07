@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from './components/Profile';
 import Contact from './components/Contact';
 import Education from './components/Education';
+import Languages from './components/Languages';
 
 class App extends Component {
   render() {
@@ -17,15 +18,10 @@ class App extends Component {
             {/*<!--education-container-->*/}
             <Education />
 
-             <div className="languages-container container-block">
-                 <h2 className="container-block-title">Languages</h2>
-                 <ul className="list-unstyled interests-list">
-                     <li>English <span className="lang-desc">(Native)</span></li>
-                     <li>French <span className="lang-desc">(Professional)</span></li>
-                     <li>Spanish <span className="lang-desc">(Professional)</span></li>
-                 </ul>
-             </div>{/*<!--//interests-->*/}
+            {/*<!--languages-container-->*/}
+            <Languages />
 
+             {/*<!--interests-->*/}
              <div className="interests-container container-block">
                  <h2 className="container-block-title">Interests</h2>
                  <ul className="list-unstyled interests-list">

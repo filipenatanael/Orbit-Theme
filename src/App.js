@@ -7,6 +7,7 @@ import Interests from './components/Interests';
 import Summary from './components/Summary';
 import Experiences from './components/Experiences';
 import Projects from './components/Projects';
+import Skills from './components/Skills';
 
 class App extends Component {
   render() {
@@ -23,68 +24,18 @@ class App extends Component {
             <Languages />
             {/*<!--interests-container-->*/}
             <Interests />
-         {/*<!--sidebar-wrapper-->*/}
          </div>
 
          <div className="main-wrapper">
-         {/*<!--section-section-->*/}
-         <Summary />
-
+           {/*<!--section-section-->*/}
+           <Summary />
            {/*<!--experiences-section-->*/}
            <Experiences />
-
            {/*<!--projects-section-->*/}
            <Projects />
-
-             <section className="skills-section section">
-                 <h2 className="section-title"><span className="icon-holder"><i className="fas fa-rocket"></i></span>Skills &amp; Proficiency</h2>
-                 <div className="skillset">
-                     <div className="item">
-                         <h3 className="level-title">Python &amp; Django</h3>
-                         <div className="progress level-bar">
-                 <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                     <div className="item">
-                         <h3 className="level-title">Javascript &amp; jQuery</h3>
-                         <div className="progress level-bar">
-                 <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                     <div className="item">
-                         <h3 className="level-title">Angular</h3>
-                         <div className="progress level-bar">
-                 <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                     <div className="item">
-                         <h3 className="level-title">HTML5 &amp; CSS</h3>
-                         <div className="progress level-bar">
-                   <div className="progress-bar theme-progress-bar" role="progressbar"  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                     <div className="item">
-                         <h3 className="level-title">Ruby on Rails</h3>
-                         <div className="progress level-bar">
-                 <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                     <div className="item">
-                         <h3 className="level-title">Sketch &amp; Photoshop</h3>
-                         <div className="progress level-bar">
-                 <div className="progress-bar theme-progress-bar" role="progressbar"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-             </div>
-                     </div>{/*<!--//item-->*/}
-
-                 </div>
-             </section>{/*<!--//skills-section-->*/}
-
-         </div>{/*<!--//main-body-->*/}
+           {/*<!--skills-section-->*/}
+           <Skills />
+         </div>
       </div>
    );
   }

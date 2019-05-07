@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Education ({ props }) => (
+const Education = ({ props }) => (
   <div className="education-container container-block">
       <h2 className="container-block-title">Education</h2>
       <div className="item">

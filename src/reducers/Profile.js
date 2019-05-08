@@ -1,5 +1,10 @@
 const initialState = {
-  name: 'Filipe Natanael'
+  general: {
+    photo: '',
+    name: 'Filipe Natanael',
+    title: 'Full Stack Developer',
+    email: 'filipenatanael@example.com'
+  }
 }
 
 const START_APP = 'START_APP';

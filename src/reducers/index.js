@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import Profile from './Profile'
+import profile from './profile'
 
-const rootReducer = combineReducers({
-  Profile,
+const reducers = combineReducers({
+  profile,
 });
 
-export default rootReducer;
+export default reducers;

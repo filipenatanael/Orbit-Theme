@@ -2,15 +2,52 @@ import { FETCH_PROFILE } from '../actions';
 
 const initialState = {
   general: {
-    photo: '',
+    photo: 'https://themes.3rdwavemedia.com/demo/orbit/assets/images/profile.png',
     name: 'Filipe Natanael',
     title: 'Full Stack Developer',
-    email: 'filipenatanael@example.com',
-    phone: '00 00000-00000',
-    portifolio: '@filipenatanael',
-    linkedin: '@filipenatanael',
-    github: '@filipenatanael',
-    twitter: '@filipenatanael'
+    contact: [
+      {
+        type: 'email',
+        content: 'filipenatanael@live.com',
+        url: 'mailto: yourname@email.com',
+        alt: 'Main Email',
+        target: false
+      },
+      {
+        type: 'phone',
+        content: '00 000 0000 000',
+        url: 'tel:0123 456 789',
+        alt: 'Phone Number',
+      },
+      {
+        type: 'website',
+        content: 'portfoliosite.com',
+        url: 'www.portifolio.com',
+        alt: 'Portofolio',
+        target: true
+      },
+      {
+        type: 'linkedin',
+        content: '@filipenatanael',
+        url: 'linkedin/filipenatanael',
+        alt: 'Linkedin',
+        target: true
+      },
+      {
+        type: 'github',
+        content: 'github.com/filipenatanael',
+        url: 'github.com/filipenatanael',
+        alt: 'GitHub',
+        target: true
+      },
+      {
+        type: 'twitter',
+        content: '@filipenatanael',
+        url: 'twitter.com/filipenatanael',
+        alt: 'Twitter',
+        target: true
+      }
+    ]
   },
   summary: {
     title: 'CAREER PROFILE',

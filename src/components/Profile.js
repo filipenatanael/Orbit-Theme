@@ -4,13 +4,14 @@ import { fetchProfile } from '../actions';
 
 const Profile = ( props ) => (
   <div className="profile-container" style={{ backgroundColor: '#000' }}>
-      <img className="profile" src="https://themes.3rdwavemedia.com/demo/orbit/assets/images/profile.png" alt="" />
+      <img className="profile" src={props.general.photo} alt="Profile Image" />
       <h1 className="name" style={{ fontSize: 25 }}>{props.general.name}</h1>
       <h3 className="tagline">{props.general.title}</h3>
       <div style={{
-        padding: 4,
-        boxShadow: '7px 7px 5px #9E9E9E',
+        // padding: 4,
+        // boxShadow: '7px 7px 5px #9E9E9E',
         position: 'absolute',
+        marginRight: -50,
         top: 0,
         right: 0
         }}>

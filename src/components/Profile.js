@@ -15,10 +15,11 @@ const Profile = ( props ) => (
         right: 0
         }}>
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"
-            alt="select language"
+            src={props.config.flag}
+            alt={props.config.alternate}
             height="25"
             width="42"
+            onClick={() => alert('Hello World!') }
             />
       </div>
   </div>
@@ -27,6 +28,7 @@ const Profile = ( props ) => (
 // <button type="button" onClick={() => props.fetchProfile()}>Click Me!</button>
 
 const mapStateToProps = state => ({
+  config: state.app.config,
   general: state.profile.general
 })
 

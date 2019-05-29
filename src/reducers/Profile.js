@@ -57,22 +57,22 @@ const initialState = {
     title: 'Experiences',
     jobs: [
       {
-        title: 'Lead Developer',
-        time: '2015 - Present',
-        company: 'Startup Hubs, San Francisco',
-        details: '<p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo.</p><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. </p>'
+        title: 'Software Engineer',
+        time: 'Jan 2015 - Jan 2019',
+        company: 'Ânima Educação, Belo Horizonte - Brazil',
+        details: '<p> - Design, develop and maintain an internal user interface library and web style guide </br>- Develop code that is modular, scalable, high performance and to high-quality standards </br>- Analyze, optimize performance, improve the code base as well as implement of bug fixes </br>- Plan, implement and release product based on Agile scrum development process </br>- Interact with cross functional teams like DevOps, QA etc to resolve the dependencies of UI and ensure timely delivery of the features </br></br><b>JavaScript, Vue.js, JQuery, Bootstrap, Node.js, Laravel, Oracle, AWS.</b></p>'
       },
       {
-        title: 'Senior Software Engineer',
-        time: '2014 - 2015',
-        company: 'Google, London',
-        details: '<p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>'
+        title: 'Full Stack Developer',
+        time: 'Jun 2017 - Jan 2018',
+        company: 'VanVirtua, Belo Horizonte - Brazil',
+        details: '<p>- Develop well structured, readable as well as clean JavaScript that scales and performs </br>- Analyze, optimize performance, and propose changes </br>- Implement creative solutions in a full-stack environment </br>- Participate in Agile development activities including sprint planning. </br></br><b>JavaScript, React Native, PWA, NoSQL, Firebase Platform.</b></p>'
       },
       {
         title: 'UI Developer',
-        time: '2012 - 2014',
-        company: 'Amazon, London',
-        details: '<p>Describe your role here lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>'
+        time: 'Jan 2013 - Dec 2013',
+        company: 'Freelancer - Self employed, Belo Horizonte - Brazil',
+        details: '<p>- Design and prototyping of ui interfaces </br>- Develop and maintain statics user interfaces </br>- Cuts, adjustments and treatment of images and banners </br></br><b>HTML/XML, CSS, JavasScript, Photoshop, Sketch, Adobe XD.</b></p>'
       }
     ]
   },

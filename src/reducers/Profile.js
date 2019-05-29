@@ -51,7 +51,7 @@ const initialState = {
   },
   summary: {
     title: 'CAREER PROFILE',
-    content: 'Enthusiastic about software architecture and design, I have over 7 years of experience working with technology, of these, 5 years was in software development using patterns, newest technologies, and frameworks such as Laravel, React and Vue. I have a strong knowledge building complex SPA applications/services and mobile applications using React-Native. I have familiarity with the progressive web apps concepts as well as I can apply it for building rich web application. I am always trying to learn more and open to new difficult tech challenges.'
+    content: 'I am fascinated for software architecture and design, I have over 7 years of experience working with technology, of these, 5 years was in software development using patterns, newest technologies, and frameworks such as Laravel, React and Vue. I have a strong knowledge building complex SPA applications/services and mobile applications using React-Native. I have familiarity with the progressive web apps concepts as well as I can apply it for building rich web application. I am always trying to learn more and open to new difficult tech challenges.'
   },
 
   github: {}

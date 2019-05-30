@@ -1,29 +1,30 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
+import DOMPurify from 'dompurify';
 
-const Projects = ({ props }) => (
+const Projects = ( props ) => (
   <section className="section projects-section">
-      <h2 className="section-title"><span className="icon-holder"><i className="fas fa-archive"></i></span>Projects</h2>
+      <h2 className="section-title"><span className="icon-holder"><i className="fas fa-archive"></i></span>{props.projects.title}</h2>
       <div className="intro">
-          <p>You can list your side projects or open source libraries in this section. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum et ligula in nunc bibendum fringilla a eu lectus.</p>
-      </div>{/*<!--//intro-->*/}
-      <div className="item">
-          <span className="project-title"><a href="#hook">Velocity</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote, market and sell their products.</span>
-
-      </div>{/*<!--//item-->*/}
-      <div className="item">
-          <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-web-development-agencies-devstudio/" target="_blank">DevStudio</a></span> -
-          <span className="project-tagline">A responsive website template designed to help web developers/designers market their services. </span>
-      </div>{/*<!--//item-->*/}
-      <div className="item">
-          <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-startups-tempo/" target="_blank">Tempo</a></span> - <span className="project-tagline">A responsive website template designed to help startups promote their products or services and to attract users &amp; investors</span>
-      </div>{/*<!--//item-->*/}
-      <div className="item">
-          <span className="project-title"><a href="hhttp://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-mobile-apps-atom/" target="_blank">Atom</a></span> - <span className="project-tagline">A comprehensive website template solution for startups/developers to market their mobile apps. </span>
-      </div>{/*<!--//item-->*/}
-      <div className="item">
-          <span className="project-title"><a href="http://themes.3rdwavemedia.com/website-templates/responsive-bootstrap-theme-for-mobile-apps-delta/" target="_blank">Delta</a></span> - <span className="project-tagline">A responsive Bootstrap one page theme designed to help app developers promote their mobile apps</span>
+          <p>{props.projects.intro}</p>
       </div>
+      {
+        _.map(props.projects.works, w => {
+          return (
+            <div className="item">
+                <span className="project-title">
+                  <a href={w.url}>{w.title}</a></span> - <span className="project-tagline" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(w.tagline)}}>
+                </span>
+            </div>
+          )
+        })
+      }
   </section>
 );
 
-export default Projects;
+const mapStateToProps = (state) => ({
+  projects: state.profile.projects
+});
+
+export default connect(mapStateToProps)(Projects);

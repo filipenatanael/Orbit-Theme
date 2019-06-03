@@ -8,7 +8,7 @@ const Summary = ( props ) => (
         {props.summary.title}
       </h2>
       <div className="summary">
-          <p>{props.summary.content}</p>
+          <p style={{ textAlign: 'justify' }}>{props.summary.content}</p>
       </div>{/*<!--//summary-->*/}
   </section>
 );

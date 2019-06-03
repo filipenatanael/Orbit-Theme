@@ -4,7 +4,7 @@ const initialState = {
   general: {
     photo: 'https://i.ibb.co/BKL9x27/B-100x100.png',
     name: 'Filipe Natanael',
-    title: 'Full Stack Developer',
+    title: 'JavaScript Developer',
     contact: [
       {
         type: 'email',
@@ -72,7 +72,7 @@ const initialState = {
         title: 'UI Developer',
         time: 'Jan 2013 - Dec 2013',
         company: 'Freelancer - Self employed, Belo Horizonte - Brazil',
-        details: '<p>- Design and prototyping of ui interfaces </br>- Develop and maintain statics user interfaces </br>- Cuts, adjustments and treatment of images and banners </br></br><b>HTML/XML, CSS, JavasScript, Photoshop, Sketch, Adobe XD.</b></p>'
+        details: '<p>- Design and prototyping of ui interfaces </br>- Develop and maintain statics user interfaces </br>- Cuts, adjustments and treatment of images and banners </br></br><b>HTML/XML, CSS, JavasScript, JQuery, Photoshop, Sketch, Adobe XD.</b></p>'
       }
     ]
   },

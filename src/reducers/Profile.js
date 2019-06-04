@@ -97,6 +97,21 @@ const initialState = {
       }
     ]
   },
+  education: {
+    title: 'Education',
+    content: [
+      {
+        degree: 'Bachelor of Technology (BTech) - System Analysis and Development',
+        meta: 'Centro Universitário UNA',
+        time: '2015 - 2018'
+      },
+      {
+        degree: 'Nanodegree - React Developer',
+        meta: 'Udacity',
+        time: '2018 - 2018'
+      }
+    ]
+  },
   github: {}
 }
 

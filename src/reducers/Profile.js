@@ -129,6 +129,20 @@ const initialState = {
       }
     ]
   },
+  interests: {
+    title: 'Interests',
+    content: [
+      {
+        interest: 'Cooking'
+      },
+      {
+        interest: 'Languages'
+      },
+      {
+        interest: 'Technology'
+      }
+    ]
+  },
   github: {}
 }
 

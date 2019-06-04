@@ -1,14 +1,24 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
 
-const Languages = ({ props }) => (
+const Languages = ( props ) => (
   <div className="languages-container container-block">
       <h2 className="container-block-title">Languages</h2>
       <ul className="list-unstyled interests-list">
-          <li>English <span className="lang-desc">(Native)</span></li>
-          <li>French <span className="lang-desc">(Professional)</span></li>
-          <li>Spanish <span className="lang-desc">(Professional)</span></li>
+          {
+            _.map(props.languages.content, c => {
+              return (
+                <li>{c.language} <span className="lang-desc">({c.level})</span></li>
+              )
+            })
+          }
       </ul>
   </div>
 );
 
-export default Languages;
+const mapStateToProps = (state) => ({
+  languages: state.profile.languages
+});
+
+export default connect(mapStateToProps)(Languages);

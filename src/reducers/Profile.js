@@ -97,6 +97,52 @@ const initialState = {
       }
     ]
   },
+  education: {
+    title: 'Education',
+    content: [
+      {
+        degree: 'Bachelor of Technology (BTech) - System Analysis and Development',
+        meta: 'Centro Universitário UNA',
+        time: '2015 - 2018'
+      },
+      {
+        degree: 'Nanodegree - React Developer',
+        meta: 'Udacity',
+        time: '2018 - 2018'
+      }
+    ]
+  },
+  languages: {
+    title: 'Languages',
+    content: [
+      {
+        language: 'Portuguese',
+        level: 'Native'
+      },
+      {
+        language: 'English',
+        level: 'Fluent'
+      },
+      {
+        language: 'French',
+        level: 'Basic'
+      }
+    ]
+  },
+  interests: {
+    title: 'Interests',
+    content: [
+      {
+        interest: 'Cooking'
+      },
+      {
+        interest: 'Languages'
+      },
+      {
+        interest: 'Technology'
+      }
+    ]
+  },
   github: {}
 }
 

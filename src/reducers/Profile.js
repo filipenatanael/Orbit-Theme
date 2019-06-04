@@ -112,6 +112,23 @@ const initialState = {
       }
     ]
   },
+  languages: {
+    title: 'Languages',
+    content: [
+      {
+        language: 'Portuguese',
+        level: 'Native'
+      },
+      {
+        language: 'English',
+        level: 'Fluent'
+      },
+      {
+        language: 'French',
+        level: 'Basic'
+      }
+    ]
+  },
   github: {}
 }
 

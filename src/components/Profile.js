@@ -20,7 +20,7 @@ const Profile = ( props ) => (
             alt={props.config.alternate}
             height="25"
             width="42"
-            onClick={() => alert('Hello World!') }
+            onClick={() => props.fetchProfile()}
             />
       </div>
   </div>
@@ -30,7 +30,8 @@ const Profile = ( props ) => (
 
 const mapStateToProps = state => ({
   config: state.app.config,
-  general: state.profile.general
+  general: state.profile.general,
+  profile: state.profile
 })
 
 export default connect(mapStateToProps, { fetchProfile })(Profile);

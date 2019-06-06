@@ -175,7 +175,7 @@ export default function(state = initialState, action) {
     case FETCH_PROFILE:
         return {
           ...state,
-          github: action.payload
+          ...action.payload
         }
     default:
       return state;

@@ -1,53 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import _ from 'lodash';
 
-const Skills = ({ props }) => (
+const Skills = ( props ) => (
   <section className="skills-section section">
-      <h2 className="section-title"><span className="icon-holder"><i className="fas fa-rocket"></i></span>Skills &amp; Proficiency</h2>
-      <div className="skillset">
-          <div className="item">
-              <h3 className="level-title">Python &amp; Django</h3>
-              <div className="progress level-bar">
-      <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
+      <h2 className="section-title">
+        <span className="icon-holder"><i className="fas fa-rocket"></i></span>
+        {props.skills.title}
+      </h2>
 
-          <div className="item">
-              <h3 className="level-title">Javascript &amp; jQuery</h3>
-              <div className="progress level-bar">
-      <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
-
-          <div className="item">
-              <h3 className="level-title">Angular</h3>
-              <div className="progress level-bar">
-      <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
-
-          <div className="item">
-              <h3 className="level-title">HTML5 &amp; CSS</h3>
-              <div className="progress level-bar">
-        <div className="progress-bar theme-progress-bar" role="progressbar"  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
-
-          <div className="item">
-              <h3 className="level-title">Ruby on Rails</h3>
-              <div className="progress level-bar">
-      <div className="progress-bar theme-progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
-
-          <div className="item">
-              <h3 className="level-title">Sketch &amp; Photoshop</h3>
-              <div className="progress level-bar">
-      <div className="progress-bar theme-progress-bar" role="progressbar"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
-  </div>
-          </div>{/*<!--//item-->*/}
-
-      </div>
+      {
+        _.map(props.skills.content, c => {
+          return (
+            <div className="skillset">
+                <div className="item">
+                  <h3 className="level-title">{c.title}</h3>
+                  <div className="progress level-bar">
+                    <div className="progress-bar theme-progress-bar"
+                         role="progressbar"
+                         aria-valuenow={c.progress}
+                         style={{ width: `${c.progress}%` }}
+                         aria-valuemin="0"
+                         aria-valuemax="100">
+                    </div>
+                </div>
+              </div>
+            </div>
+          )
+        })
+      }
   </section>
 );
 
-export default Skills;
+const mapStateToProps = (state) => ({
+  skills: state.profile.skills
+});
+
+export default connect(mapStateToProps)(Skills);

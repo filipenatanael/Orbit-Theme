@@ -143,6 +143,23 @@ const initialState = {
       }
     ]
   },
+  skills: {
+    title: 'Skills & Proficiency',
+    content: [
+      {
+        title: 'Python & Django',
+        progress: '50'
+      },
+      {
+        title: 'Javascript & jQuery',
+        progress: '70'
+      },
+      {
+        title: 'HTML5 & CSS',
+        progress: '30'
+      }
+    ]
+  },
   github: {}
 }
 

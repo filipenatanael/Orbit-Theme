@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "axios": "^0.18.0",
+    "axios-jsonp": "^1.0.2",
     "dompurify": "^1.0.10",
     "lodash": "^4.17.11",
     "node-sass": "^4.12.0",

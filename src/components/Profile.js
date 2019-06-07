@@ -4,7 +4,7 @@ import { fetchProfile } from '../actions';
 
 const Profile = ( props ) => (
   <div className="profile-container" style={{ backgroundColor: '#000' }}>
-      <img className="profile" src={props.general.photo} alt="Profile Image" />
+      <img className="profile" src={props.general.photo} alt="Profile" />
       <h1 className="name" style={{ fontSize: 25 }}>{props.general.name}</h1>
       <h3 className="tagline">{props.general.title}</h3>
       <div style={{

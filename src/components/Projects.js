@@ -12,7 +12,7 @@ const Projects = ( props ) => (
       {
         _.map(props.projects.works, w => {
           return (
-            <div className="item">
+            <div key={w.title} className="item">
                 <span className="project-title">
                   <a href={w.url}>{w.title}</a></span> - <span className="project-tagline" dangerouslySetInnerHTML={{__html: DOMPurify.sanitize(w.tagline)}}>
                 </span>

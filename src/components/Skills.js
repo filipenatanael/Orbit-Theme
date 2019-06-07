@@ -12,7 +12,7 @@ const Skills = ( props ) => (
       {
         _.map(props.skills.content, c => {
           return (
-            <div className="skillset">
+            <div key={c.title} className="skillset">
                 <div className="item">
                   <h3 className="level-title">{c.title}</h3>
                   <div className="progress level-bar">

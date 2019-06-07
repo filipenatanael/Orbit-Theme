@@ -9,7 +9,7 @@ const Languages = ( props ) => (
           {
             _.map(props.languages.content, c => {
               return (
-                <li>{c.language} <span className="lang-desc">({c.level})</span></li>
+                <li key={c.level}>{c.language} <span className="lang-desc">({c.level})</span></li>
               )
             })
           }

@@ -5,7 +5,7 @@ export const FETCH_PROFILE = 'FETCH_PROFILE';
 
 export function fetchProfile(language) {
   return dispatch => {
-    axios.get(`https://curriculum-3ed13.firebaseio.com/profiles/enghish.json`, { adapter: jsonpAdapter })
+    axios.get(`https://curriculum-3ed13.firebaseio.com/profiles/${language}.json`, { adapter: jsonpAdapter })
     .then(res => dispatch(fetchProfileSuccess(res.data)));
   }
 }

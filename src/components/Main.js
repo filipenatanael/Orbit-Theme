@@ -9,6 +9,7 @@ import Summary from './Summary';
 import Experiences from './Experiences';
 import Projects from './Projects';
 import Skills from './Skills';
+import { ToastContainer, toast } from 'react-toastify';
 
 import { fetchProfile } from '../actions';
 
@@ -30,6 +31,7 @@ class Main extends Component {
 
         return (
           <div className="wrapper">
+            <ToastContainer autoClose={2000} />
              <div className="sidebar-wrapper">
                 {/*<!--profile-container-->*/}
                 <Profile />

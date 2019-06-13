@@ -9,7 +9,7 @@ const Interests = ( props ) => (
           {
             _.map(props.interests.content, c => {
               return (
-                <li>{c.interest}</li>
+                <li key={c.interest}>{c.interest}</li>
               )
             })
           }

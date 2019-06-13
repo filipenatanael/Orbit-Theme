@@ -11,7 +11,7 @@ const Experiences = ( props ) => (
         _.map(props.experiences.jobs, j => {
 
           return (
-            <div className="item">
+            <div key={j.title} className="item">
                 <div className="meta">
                     <div className="upper-row">
                         <h3 className="job-title">{j.title}</h3>

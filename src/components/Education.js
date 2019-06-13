@@ -8,7 +8,7 @@ const Education = ( props ) => (
       {
         _.map(props.education.content, c => {
           return (
-            <div className="item">
+            <div key={c.degree} className="item">
                 <h4 className="degree">{c.degree}</h4>
                 <h5 className="meta">{c.meta}</h5>
                 <div className="time">{c.time}</div>

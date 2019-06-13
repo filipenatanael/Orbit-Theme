@@ -18,7 +18,7 @@ const Contact = ( props ) => (
           _.map(props.contact, c => {
             let icon = Icons[c.type];
             return (
-              <li className={c.type}><i className={icon}></i>
+              <li key={c.type} className={c.type}><i className={icon}></i>
                <a href={c.url} target={c.target === true ? '_blank' : ''}>{c.content}</a></li>
               );
           })

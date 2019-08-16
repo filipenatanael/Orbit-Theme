@@ -9,7 +9,7 @@ import Summary from './Summary';
 import Experiences from './Experiences';
 import Projects from './Projects';
 import Skills from './Skills';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 
 import { fetchProfile } from '../actions';
 

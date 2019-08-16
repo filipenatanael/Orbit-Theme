@@ -71,12 +71,7 @@ const initialState = {
   },
   skills: {
     title: 'Skills & Proficiency',
-    content: [
-      {
-        title: 'JavaScript',
-        progress: '50'
-      }
-    ]
+    content: []
   }
 }
 
